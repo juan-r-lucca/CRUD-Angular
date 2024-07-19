@@ -1,0 +1,21 @@
+<div class="container">
+    <button class="btn-return" routerLink="">Return</button>
+    <div class="form-container">
+        <h2 class="form-title">Post new Destiny</h2>
+        <form [formGroup]="postDestinoForm">    
+            <div class="form-group">
+                <label for="idCidade">id da cidade</label>
+                <input type="text" id="idCidade" name="idCidade" required formControlName="idCidade">
+            </div>
+            <div class="form-group">
+                <label for="logradouro">logradouro</label>
+                <input type="text" id="logradouro" name="logradouro" required formControlName="logradouro">
+            </div>
+            <div class="form-group">
+                <label for="descricao">descricao</label>
+                <input type="text" id="descricao" name="descricao" required formControlName="descricao">
+            </div>
+            <button type="submit" (click)="postDestino()">Post</button>
+        </form>
+    </div>
+</div>

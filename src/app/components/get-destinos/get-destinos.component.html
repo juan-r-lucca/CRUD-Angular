@@ -1,0 +1,25 @@
+<table>
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Id Cidade</th>
+            <th>Logradouro</th>
+            <th>Descrição</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let destino of destinos">
+            <td>{{ destino.id }}</td>
+            <td>{{ destino.idCidade}}</td>
+            <td>{{ destino.logradouro }}</td>
+            <td>{{ destino.descricao }}</td>
+            <td>
+                <button class="btn-update" routerLink="/destinos/{{destino.id}}">Update</button>
+            </td>
+            <td>
+                <button class="btn-delete" (click)="deleteDestinos(destino.id)">Delete</button>
+            </td>
+        </tr>
+    </tbody>
+    <button class="btn-create" routerLink="/destinos">Create</button>
+</table>
