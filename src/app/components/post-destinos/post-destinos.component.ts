@@ -1,6 +1,5 @@
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { DestinosService } from './../../service/destinos.service';
-import { DestinosComponent } from './../destinos/destinos.component';
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 
